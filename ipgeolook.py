@@ -9,7 +9,12 @@ def lookup_ip(ip_address):
         print(f"IP Address: {data['ip']}")
         print(f"Location: {data['city']}, {data['region']}, {data['country']}")
         print(f"Org: {data['org']}")
-        print(f"Hostname: {data['hostname']}")
+        
+        # Check if 'hostname' key exists in the response data
+        if 'hostname' in data:
+            print(f"Hostname: {data['hostname']}")
+        else:
+            print("Hostname: Not available")
     else:
         print("Could not retrieve information for this IP address.")
 
