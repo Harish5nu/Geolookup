@@ -1,4 +1,4 @@
-import requests
+import requests 
 
 def lookup_ip(ip_address):
     url = f"https://ipinfo.io/{ip_address}/json"  # API URL to get IP info
@@ -19,5 +19,5 @@ def lookup_ip(ip_address):
         print("Could not retrieve information for this IP address.")
 
 if __name__ == "__main__":
-    ip = input("Enter the IP address to lookup: ")
+    ip = input("Enter the IP address for lookup: ")
     lookup_ip(ip)
