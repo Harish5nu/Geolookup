@@ -10,7 +10,7 @@ def lookup_ip(ip_address):
         print(f"Location: {data['city']}, {data['region']}, {data['country']}")
         print(f"Org: {data['org']}")
         
-        # Check if 'hostname' key exists in the response data
+        # Check if 'hostname' key exists in the response Data
         if 'hostname' in data:
             print(f"Hostname: {data['hostname']}")
         else:
@@ -19,5 +19,5 @@ def lookup_ip(ip_address):
         print("Could not retrieve information for this IP address.")
 
 if __name__ == "__main__":
-    ip = input("Enter the IP address for lookup or Target IP: ")
+    ip = input("Enter the IP address for lookup or Target IP for lookup: ")
     lookup_ip(ip)
