@@ -14,7 +14,7 @@ def lookup_ip(ip_address):
         if 'hostname' in data:
             print(f"Hostname: {data['hostname']}")
         else:
-            print("Hostname: Not available")
+            print("Hostname:Is Not available")
     else:
         print("Could not retrieve information for this IP address.")
 
