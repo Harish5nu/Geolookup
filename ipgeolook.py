@@ -16,7 +16,7 @@ def lookup_ip(ip_address):
         else:
             print("Hostname:Is Not available")
     else:
-        print("Could not retrieve information for this IP address.")
+        print("Couldn't retrieve information for this IP address.")
 
 if __name__ == "__main__":
     ip = input("Enter the IP address for lookup or Target IP for lookup: ")
