@@ -19,5 +19,5 @@ def lookup_ip(ip_address):
         print("Couldn't retrieve information for this IP address.")
 
 if __name__ == "__main__":
-    ip = input("Enter the IP address for lookup or Target IP for lookup: ")
+    ip = input("Enter IP address for lookup or Target IP for lookup: ")
     lookup_ip(ip)
